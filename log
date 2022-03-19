@@ -187,3 +187,15 @@ Sat Mar 19 18:24:02 UTC 2022:
  tests:  11|1
 total_score: 55/70
 89745f8
+Sat Mar 19 18:29:27 UTC 2022: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:118:12: error: format ‘%i’ expects argument of type ‘int’, but argument 2 has type ‘void *’ [-Werror=format=]
+   printf("%i", list->current->data);
+           ~^   ~~~~~~~~~~~~~~~~~~~
+           %p
+cc1: all warnings being treated as errors
+Compilation failed
+098b38c
