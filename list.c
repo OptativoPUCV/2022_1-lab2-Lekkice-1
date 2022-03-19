@@ -137,10 +137,7 @@ void * popCurrent(List * list) {
     }
   }
 
-  void * data = node->data;
-
-  //free(node);
-  return data;
+  return node->data;
 }
 
 void cleanList(List * list) {
