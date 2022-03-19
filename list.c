@@ -37,6 +37,7 @@ List * createList() {
 
 void * firstList(List * list) {
   list->current = list->head;
+  printf("%i", *(list->current));
   return list->head;
 }
 

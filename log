@@ -50,3 +50,14 @@ Sat Mar 19 17:50:38 UTC 2022:
  tests:  3|3
 total_score: 30/70
 bad8b74
+Sat Mar 19 17:51:16 UTC 2022: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+list.c: In function ‘firstList’:
+list.c:40:12: error: format ‘%i’ expects argument of type ‘int’, but argument 2 has type ‘Node {aka struct Node}’ [-Werror=format=]
+   printf("%i", *(list->current));
+           ~^   ~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+becd2eb
