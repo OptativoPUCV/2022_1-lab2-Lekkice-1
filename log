@@ -75,3 +75,8 @@ list.c:40:16: error: invalid use of void expression
 cc1: all warnings being treated as errors
 Compilation failed
 eebf382
+Sat Mar 19 17:52:44 UTC 2022: 
+ list.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+ tests:  0|0
+b31dac6

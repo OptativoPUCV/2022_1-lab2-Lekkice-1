@@ -37,8 +37,7 @@ List * createList() {
 
 void * firstList(List * list) {
   list->current = list->head;
-  printf("%i", *(list->current->data));
-  return list->head;
+  return list->head->data;
 }
 
 void * nextList(List * list) {
@@ -48,7 +47,7 @@ void * nextList(List * list) {
 
 void * lastList(List * list) {
   list->current = list->tail;
-  return list->tail;
+  return list->tail->data;
 }
 
 void * prevList(List * list) {
