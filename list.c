@@ -132,6 +132,7 @@ void * popCurrent(List * list) {
     }
     else
     {
+      printf("not head\n");
       node->prev = node->next;
       node->next = node->prev;
       list->current = node->next;
