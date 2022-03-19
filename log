@@ -181,3 +181,9 @@ list.c:136:27: error: request for member ‘next’ in something not a structure
 cc1: all warnings being treated as errors
 Compilation failed
 7faaf89
+Sat Mar 19 18:24:02 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 55/70
+89745f8
