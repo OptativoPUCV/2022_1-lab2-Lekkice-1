@@ -37,7 +37,7 @@ List * createList() {
 
 void * firstList(List * list) {
   list->current = list->head;
-  return list->current;
+  return list->head;
 }
 
 void * nextList(List * list) {
@@ -47,7 +47,7 @@ void * nextList(List * list) {
 
 void * lastList(List * list) {
   list->current = list->tail;
-  return list->current;
+  return list->tail;
 }
 
 void * prevList(List * list) {
@@ -96,7 +96,6 @@ void pushCurrent(List * list, void * data) {
 
   if (list->current->next) list->current->next->prev = node;
   list->current->next = node;
-  //if (list->current == list->head) list->head = node;
 }
 
 void * popFront(List * list) {
@@ -121,8 +120,6 @@ void * popCurrent(List * list) {
   {
       list->head = list->current->next;
   }
-  // cambiar tail si current = tail
-  // tambiÃ©n head a NULL
 
   void * data = list->current->data;
   void * next = list->current->next;
