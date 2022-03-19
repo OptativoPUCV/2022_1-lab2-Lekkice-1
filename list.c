@@ -115,7 +115,7 @@ void * popBack(List * list) {
 void * popCurrent(List * list) {
   if (list->current == NULL) return NULL;
   Node * node = list->current;
-  printf("%p", list->current->data);
+  printf("%i", *(list->current->data));
   if (node == list->tail)
   {
     list->tail = node->prev;
