@@ -8,3 +8,17 @@ Thu Mar 17 21:38:41 UTC 2022:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 b4e3910
+Sat Mar 19 16:31:50 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘firstList’:
+list.c:40:10: error: incompatible types when returning type ‘Node {aka struct Node}’ but ‘void *’ was expected
+   return *(list->current);
+          ^~~~~~~~~~~~~~~~
+list.c:41:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+97cb8d7
