@@ -139,7 +139,7 @@ void * popCurrent(List * list) {
 
   void * data = node->data;
 
-  free(node);
+  //free(node);
   return data;
 }
 
