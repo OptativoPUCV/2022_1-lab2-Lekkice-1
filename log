@@ -80,3 +80,24 @@ Sat Mar 19 17:52:44 UTC 2022:
  1 file changed, 2 insertions(+), 3 deletions(-)
  tests:  0|0
 b31dac6
+Sat Mar 19 17:53:37 UTC 2022: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘firstList’:
+list.c:39:27: error: ‘return’ with no value, in function returning non-void [-Werror]
+   if (list->head == NULL) return;
+                           ^~~~~~
+list.c:38:8: note: declared here
+ void * firstList(List * list) {
+        ^~~~~~~~~
+list.c: In function ‘lastList’:
+list.c:50:28: error: ‘return’ with no value, in function returning non-void [-Werror]
+    if (list->tail == NULL) return;
+                            ^~~~~~
+list.c:49:8: note: declared here
+ void * lastList(List * list) {
+        ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e368cca
